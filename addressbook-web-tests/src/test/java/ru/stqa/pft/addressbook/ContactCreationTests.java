@@ -34,7 +34,7 @@ public class ContactCreationTests {
     @Test
     public void testContactCreation() throws Exception {
         initContactCreation();
-        fillContactForm("ok","Lastname", "Nickname something", "brooklyn st");
+        fillContactForm(new ContactData("John", "Lastname", "Nickname something", "brooklyn st"));
         confirmContactCreation();
         returnToHomePage();
     }
@@ -47,19 +47,19 @@ public class ContactCreationTests {
         driver.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
 
-    private void fillContactForm(String firstname, String lastname, String nickname, String address) {
+    private void fillContactForm(ContactData contactData) {
         driver.findElement(By.name("firstname")).click();
         driver.findElement(By.name("firstname")).clear();
-        driver.findElement(By.name("firstname")).sendKeys(firstname);
+        driver.findElement(By.name("firstname")).sendKeys(contactData.getFirstname());
         driver.findElement(By.name("lastname")).click();
         driver.findElement(By.name("lastname")).clear();
-        driver.findElement(By.name("lastname")).sendKeys(lastname);
+        driver.findElement(By.name("lastname")).sendKeys(contactData.getLastname());
         driver.findElement(By.name("nickname")).click();
         driver.findElement(By.name("nickname")).clear();
-        driver.findElement(By.name("nickname")).sendKeys(nickname);
+        driver.findElement(By.name("nickname")).sendKeys(contactData.getNickname());
         driver.findElement(By.name("address")).click();
         driver.findElement(By.name("address")).clear();
-        driver.findElement(By.name("address")).sendKeys(address);
+        driver.findElement(By.name("address")).sendKeys(contactData.getAddress());
     }
 
 
