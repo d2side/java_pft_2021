@@ -85,7 +85,7 @@
       <recent name="ru.stq.pft.sandbox" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PointTests.testDistance">
+  <component name="RunManager" selected="TestNG.GroupCreationTests">
     <configuration name="GroupCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -175,9 +175,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.PointTests.testDistance" />
         <item itemvalue="TestNG.PointTests" />
-        <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.SquareTests" />
         <item itemvalue="TestNG.SquareTests.testArea" />
       </list>
